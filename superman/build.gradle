@@ -1,7 +1,5 @@
 buildscript {
     repositories {
-//        mavenLocal()
-		maven { url "http://github.com/laurencecao/librepo"}
         maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
         jcenter()
         maven { url "http://repo.spring.io/plugins-release" }
@@ -18,7 +16,6 @@ plugins {
 
 repositories {
 //    mavenLocal()
-	maven { url "http://github.com/laurencecao/librepo"}
     maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
     maven { url "http://repo2.maven.org/maven2/" }
     maven { url "http://maven.openimaj.org/" }
@@ -44,7 +41,7 @@ sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = 1.8
 
 dependencies {
-	compile("com.duitang.service:karma-core:1.0")
+	compile("com.github.laurencecao:karma-core:1.0")
     compile("org.springframework.boot:spring-boot-starter-web") {
         exclude group: "org.springframework.boot", module: "spring-boot-starter-logging"
         exclude group: "org.springframework.boot", module: "spring-boot-starter-tomcat"
